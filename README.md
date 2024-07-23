@@ -1,1 +1,3 @@
 # Time-Series-Analysis
+###This is an application of Time series analysis based solely on Time Domain Approach using R on a electricity consumption units dataset for my house from our electricity supplier's website (collected for each months over the past 5 years). I first took a logarithmic transformation of the data and then based on additive model assumption, searched for any potential trend, seasonal components and directly eliminated them without extracting separately.
+Then using the irregular component, I modelled a multiplicative SARIMA on the data, to find the 12-step ahead forecast and then back-transform it using exponential function to predeict how much electricity units will be consumed(with a 1-s.e. confidence band) in my household within the next 12 months.
